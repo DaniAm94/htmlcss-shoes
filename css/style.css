@@ -4,3 +4,48 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Body */
+
+.full-page {
+    height: 100vh;
+    position: relative;
+    border: 2px dashed black;
+    background-color: dodgerblue;
+}
+
+.content {
+    height: 500px;
+    width: 700px;
+    background-color: brown;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-bar {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    top: 70px;
+    right: 100px;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav-bar a {
+    font-size: 2rem;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
