@@ -5,9 +5,14 @@
     box-sizing: border-box;
 }
 
-/* Utils */
+/* Generics */
 * {
     font-family: 'Rubik Mono One', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 /* Body */
@@ -23,32 +28,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: min-content;
-}
-
-.nav-bar {
-    position: fixed;
-    top: 70px;
-    right: 100px;
-}
-
-.nav-bar ul {
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-}
-
-.nav-bar a {
-    font-size: 2rem;
-    font-weight: bold;
-    display: inline-block;
-    height: 80px;
-    width: 80px;
-    line-height: 80px;
-    border-radius: 50%;
-    text-align: center;
-    color: black;
-    background-color: white;
-    text-decoration: none;
 }
 
 #first-page {
@@ -74,4 +53,42 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 70px;
+}
+
+/* Nav Bar */
+
+.nav-bar {
+    position: fixed;
+    top: 70px;
+    right: 100px;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav-bar a {
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px black inset;
+}
+
+.nav-bar a:hover {
+    scale: 1.2;
+}
+
+.nav-bar a:active {
+    scale: 0.8;
+    box-shadow: 0 0 50px 20px white;
 }
